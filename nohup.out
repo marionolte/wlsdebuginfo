@@ -1,0 +1,246 @@
+Dec 10, 2014 8:08:52 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Dec 10, 2014 8:09:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Dec 10, 2014 8:09:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Dec 10, 2014 8:09:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Dec 10, 2014 8:09:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:55:53 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:03 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:13 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:15 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:17 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:24 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:25 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:25 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:27 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:07:56:27 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:22 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:22 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:22 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:31 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2FProtection.jsp HTTP/1.1" 200 9
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:32 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 43
+127.0.0.1 - - [10/Dec/2014:16:48:32 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:33 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 60
+127.0.0.1 - - [10/Dec/2014:16:48:32 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:33 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 76
+127.0.0.1 - - [10/Dec/2014:16:48:34 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:35 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 92
+127.0.0.1 - - [10/Dec/2014:16:48:35 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:35 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 108
+127.0.0.1 - - [10/Dec/2014:16:48:35 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:37 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 124
+127.0.0.1 - - [10/Dec/2014:16:48:37 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:37 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 140
+127.0.0.1 - - [10/Dec/2014:16:48:38 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:39 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 156
+127.0.0.1 - - [10/Dec/2014:16:48:39 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:40 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 172
+127.0.0.1 - - [10/Dec/2014:16:48:39 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:41 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 188
+127.0.0.1 - - [10/Dec/2014:16:48:41 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:42 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 205
+127.0.0.1 - - [10/Dec/2014:16:48:42 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:43 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 222
+127.0.0.1 - - [10/Dec/2014:16:48:42 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:43 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 239
+127.0.0.1 - - [10/Dec/2014:16:48:44 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:45 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 256
+127.0.0.1 - - [10/Dec/2014:16:48:44 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:46 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 273
+127.0.0.1 - - [10/Dec/2014:16:48:46 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:46 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:46 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6772
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:48:46 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:49:55 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:49:55 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6795
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:49:55 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:50:12 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:50:12 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6795
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:16:50:12 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:00:55 +0100] "POST /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:00:59 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=startstop HTTP/1.1" 200 8
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:02 +0100] "POST /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:14 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:14 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:14 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:20 +0100] "POST /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:28 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=startstop HTTP/1.1" 200 8
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:28 +0100] "POST /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:33 +0100] "POST /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:46 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=startstop HTTP/1.1" 200 8
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:01:52 +0100] "POST /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:03:16 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:03:16 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6795
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:03:16 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:03:23 +0100] "POST /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:04:21 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:04:21 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:04:21 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:04:23 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:04:23 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6795
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:04:23 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:04:30 +0100] "POST /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:07 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:07 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6795
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:07 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:20 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2FProtection.jsp HTTP/1.1" 200 9
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:22 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 82
+127.0.0.1 - - [10/Dec/2014:17:05:22 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:24 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 98
+127.0.0.1 - - [10/Dec/2014:17:05:24 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:25 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 113
+127.0.0.1 - - [10/Dec/2014:17:05:25 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:26 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 128
+127.0.0.1 - - [10/Dec/2014:17:05:26 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:27 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 143
+127.0.0.1 - - [10/Dec/2014:17:05:27 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:29 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 158
+127.0.0.1 - - [10/Dec/2014:17:05:29 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:30 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 173
+127.0.0.1 - - [10/Dec/2014:17:05:30 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:31 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 188
+127.0.0.1 - - [10/Dec/2014:17:05:31 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:33 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 203
+127.0.0.1 - - [10/Dec/2014:17:05:33 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:34 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 218
+127.0.0.1 - - [10/Dec/2014:17:05:34 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:35 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 234
+127.0.0.1 - - [10/Dec/2014:17:05:35 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:37 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 250
+127.0.0.1 - - [10/Dec/2014:17:05:37 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:38 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 266
+127.0.0.1 - - [10/Dec/2014:17:05:38 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:39 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 282
+127.0.0.1 - - [10/Dec/2014:17:05:39 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:40 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 298
+127.0.0.1 - - [10/Dec/2014:17:05:40 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:42 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 314
+127.0.0.1 - - [10/Dec/2014:17:05:42 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:43 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 330
+127.0.0.1 - - [10/Dec/2014:17:05:43 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:44 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 346
+127.0.0.1 - - [10/Dec/2014:17:05:44 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:46 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 362
+127.0.0.1 - - [10/Dec/2014:17:05:46 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:47 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 378
+127.0.0.1 - - [10/Dec/2014:17:05:47 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:48 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 394
+127.0.0.1 - - [10/Dec/2014:17:05:48 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:50 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 410
+127.0.0.1 - - [10/Dec/2014:17:05:50 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:51 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 426
+127.0.0.1 - - [10/Dec/2014:17:05:51 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:52 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 442
+127.0.0.1 - - [10/Dec/2014:17:05:52 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:53 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 458
+127.0.0.1 - - [10/Dec/2014:17:05:53 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:05:53 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=startstop HTTP/1.1" 200 8
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:08 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:08 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6795
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:08 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:13 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2FProtection.jsp HTTP/1.1" 200 9
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:15 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 82
+127.0.0.1 - - [10/Dec/2014:17:09:15 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:16 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 98
+127.0.0.1 - - [10/Dec/2014:17:09:16 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:17 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 113
+127.0.0.1 - - [10/Dec/2014:17:09:17 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:19 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 128
+127.0.0.1 - - [10/Dec/2014:17:09:19 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:20 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 143
+127.0.0.1 - - [10/Dec/2014:17:09:20 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:21 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 158
+127.0.0.1 - - [10/Dec/2014:17:09:21 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:23 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 173
+127.0.0.1 - - [10/Dec/2014:17:09:23 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:24 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 188
+127.0.0.1 - - [10/Dec/2014:17:09:24 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:25 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 203
+127.0.0.1 - - [10/Dec/2014:17:09:25 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:27 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 218
+127.0.0.1 - - [10/Dec/2014:17:09:27 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:28 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 234
+127.0.0.1 - - [10/Dec/2014:17:09:28 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:29 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 250
+127.0.0.1 - - [10/Dec/2014:17:09:29 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:30 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 266
+127.0.0.1 - - [10/Dec/2014:17:09:30 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:32 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 282
+127.0.0.1 - - [10/Dec/2014:17:09:32 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:09:32 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=startstop HTTP/1.1" 200 8
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:10:14 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:10:14 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:10:14 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:10:18 +0100] "GET /WLSDebugInfo/oam/ HTTP/1.1" 200 461
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:10:50 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 298
+127.0.0.1 - - [10/Dec/2014:17:10:50 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:11:01 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 314
+127.0.0.1 - - [10/Dec/2014:17:11:01 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:11:10 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 330
+127.0.0.1 - - [10/Dec/2014:17:11:10 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:37:42 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 346
+127.0.0.1 - - [10/Dec/2014:17:37:42 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:37:46 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 362
+127.0.0.1 - - [10/Dec/2014:17:37:46 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:37:49 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:39:35 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost:48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 9
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:39:41 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 377
+127.0.0.1 - - [10/Dec/2014:17:39:41 +0100] "GET /WLSDebugInfo/oam/ HTTP/1.1" 200 461
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:43:25 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost:48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:43:32 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost:48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:43:38 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost:48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:43:47 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost:48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:44:32 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:53:48 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:53:56 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:56:29 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:17:56:32 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:00:45 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:00:50 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:01:07 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:01:38 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=&password=&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:01:53 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pw&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:01:57 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pw&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:02:07 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:02:07 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6795
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:02:07 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+Dec 10, 2014 6:02:26 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException
+	at service.Protect.setUser(Protect.java:31)
+	at org.apache.jsp.oam.update_jsp._jspService(update_jsp.java:85)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:615)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:695)
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:02:26 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pla&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 500 2625
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:07 +0100] "GET / HTTP/1.1" 200 7777
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:07 +0100] "GET /tomcat.gif HTTP/1.1" 200 1934
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:07 +0100] "GET /asf-logo-wide.gif HTTP/1.1" 200 5866
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:07 +0100] "GET /tomcat-power.gif HTTP/1.1" 200 2324
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:10 +0100] "GET /WLSDebugInfo/oam/Protection.jsp HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:10 +0100] "GET /WLSDebugInfo/oam/js/main.js HTTP/1.1" 200 6795
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:10 +0100] "GET /WLSDebugInfo/oam/topinfo.html HTTP/1.1" 200 1189
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:15 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 82
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:29 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 82
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:33 +0100] "GET /WLSDebugInfo/oam/update.jsp?main=msg HTTP/1.1" 200 82
+0:0:0:0:0:0:0:1%0 - - [10/Dec/2014:18:03:42 +0100] "GET //WLSDebugInfo/oam/update.jsp?main=start&username=ua&password=pw&url=http%3A%2F%2Flocalhost%3A48080%2FWLSDebugInfo%2Foam%2F HTTP/1.1" 200 13

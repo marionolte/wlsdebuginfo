@@ -1,0 +1,2 @@
+To compile SSHWebProxy, please add the Servlet api (javax.servlet.jar)
+to this directory, or place it in your system classpath.

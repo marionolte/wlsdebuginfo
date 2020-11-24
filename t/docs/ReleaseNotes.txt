@@ -1,0 +1,50 @@
+SSHWebProxy - Eric Daugherty
+web@ericdaugherty.com
+http://www.ericdaugherty.com/dev/sshwebproxy
+--------------------------------------------
+
+Revision History
+----------------
+
+0.5 - Released 03/18/2004
+
+Added 'restricted' mode where users are not authenticated
+with SSHWebProxy but can only connect to a single host.  Most
+useful to provide remote access to the locahost via a browser.
+
+Added key based authentication.  Currently, only OpenSSH and SSHTools
+key formats are supported.
+
+0.4 - Released 01/01/2004
+
+Added DOCTYPE to all HTML pages to indicate HTML 4.01 Strict.  This
+resolves the layout issues with IE for the shell screen.
+
+Fixed the behaviour of the 'enter' key on the shell page to execute
+the writeline button while pressed in the textbox.
+
+Fixed Buffer pop-up display for IE.
+
+0.3 - Released 12/08/2003
+
+Added display of entire buffer for Shell.
+
+Added refresh button to shell page.
+
+Added connection cleanup for sessions that time out or are invalidated.
+
+Added display of cursor location.
+
+Current Connections label is only displayed when at least one connection exists.
+
+0.2 - Released 11/22/2003
+
+Added (partial) VT100 Terminal Emulation.
+
+Added license headers to source files.
+
+Code cleanup.
+
+0.1 - Released 11/19/2003
+
+Initial Release

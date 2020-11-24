@@ -1,0 +1,30 @@
+.header
+{
+    font-size: 20pt;
+    text-align:center;
+}
+
+.sub-header
+{
+    font-size: 12pt;
+}
+
+.error
+{
+    background-color: red;
+    font-size : 125%;
+}
+
+/* Defines the style for the Shell text display div */
+#shell
+{
+    background-color: #F7F7F7;
+    font-family: monospace;
+    white-space: pre;
+}
+
+/* Defines the style for the cursor span */
+#shell-cursor
+{
+    background-color: blue;
+}

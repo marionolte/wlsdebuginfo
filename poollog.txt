@@ -1,0 +1,107 @@
+
+*****Logger initialized at Mon Jan 12 10:44:33 CET 2015 *****
+
+<message class='PoolManagerImpl' time-stamp='Mon Jan 12 10:44:33 CET 2015'>
+
+
+Connection Pool Configuration ======>
+	PoolName: asta
+	Max Connections: 10
+	Min Connections: 0
+	Increment-Connections by: 1
+	User Name: ****
+	Password: ****
+	Connection String: jdbc:mysql://localhost:3306/jwebcalendar?autoReconnect=true
+	Driver: com.mysql.jdbc.Driver
+	Vakidator Query: select mid from web_mitglied
+	Default Pool: true
+	Detect Leaks: true
+	Leak Timeout: 10 Seconds
+	Default Listener: null
+	Pool Thread Time: 100 Seconds
+	Auto Close: true
+	Max connection for release: 0
+	Connection Loader Class: null
+	Connection Wait Time Out: 10 Seconds
+	Maximum Connection Idle Time: 10 Seconds
+</message>
+<message class='ConnectionLeakPollThread-asta' time-stamp='Mon Jan 12 10:44:33 CET 2015'>
+Starting Thread for detecting connection leaks
+</message>
+<message class='ConnectionLeakPollThread-asta' time-stamp='Mon Jan 12 10:44:33 CET 2015'>
+Polling .............
+</message>
+<message class='connectionpool.ConnectionPoolException' time-stamp='Mon Jan 12 10:44:48 CET 2015'>
+Exception Created: Could not obtain Connection
+</message>
+<message class='connectionpool.ConnectionPoolException' time-stamp='Mon Jan 12 10:44:48 CET 2015'>
+<exception>de.fhweingarten.zebra.jdbcpool.ConnectionPoolException: Could not obtain Connection</exception>
+<stack-trace>
+de.fhweingarten.zebra.jdbcpool.ConnectionPoolException: Could not obtain Connection
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.loadConnection(ConnectionPool.java:51)
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.getConnection(ConnectionPool.java:379)
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.getConnection(ConnectionPool.java:199)
+	at de.fhweingarten.zebra.jdbcpool.PoolManagerImpl.getConnection(PoolManagerImpl.java:125)
+	at de.fhweingarten.zebra.jdbcpool.PoolManagerImpl.getConnection(PoolManagerImpl.java:99)
+	at de.fhweingarten.zebra.jdbcpool.SmartPoolFactory.getConnection(SmartPoolFactory.java:120)
+	at de.fhweingarten.zebra.jdbcconnection.DbConnection.getConnection(DbConnection.java:54)
+	at de.fhweingarten.zebra.calendar.CalendarHandler.getCalendars(CalendarHandler.java:100)
+	at de.fhweingarten.zebra.calendar.CalendarAppl.getCalendarEntries(CalendarAppl.java:236)
+	at de.fhweingarten.zebra.calendar.Notifier.run(Notifier.java:84)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by:
+java.sql.SQLException: Server connection failure during transaction. Due to underlying exception: 'java.net.SocketException: java.net.ConnectException: Connection refused'.
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:143)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:225)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1923)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:452)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:185)
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.loadConnection(ConnectionPool.java:47)
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.getConnection(ConnectionPool.java:379)
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.getConnection(ConnectionPool.java:199)
+	at de.fhweingarten.zebra.jdbcpool.PoolManagerImpl.getConnection(PoolManagerImpl.java:125)
+	at de.fhweingarten.zebra.jdbcpool.PoolManagerImpl.getConnection(PoolManagerImpl.java:99)
+	at de.fhweingarten.zebra.jdbcpool.SmartPoolFactory.getConnection(SmartPoolFactory.java:120)
+	at de.fhweingarten.zebra.jdbcconnection.DbConnection.getConnection(DbConnection.java:54)
+	at de.fhweingarten.zebra.calendar.CalendarHandler.getCalendars(CalendarHandler.java:100)
+	at de.fhweingarten.zebra.calendar.CalendarAppl.getCalendarEntries(CalendarAppl.java:236)
+	at de.fhweingarten.zebra.calendar.Notifier.run(Notifier.java:84)
+	at java.lang.Thread.run(Thread.java:695)
+
+
+** END NESTED EXCEPTION **
+
+
+Attempted reconnect 3 times. Giving up.
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1994)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:452)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:185)
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.loadConnection(ConnectionPool.java:47)
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.getConnection(ConnectionPool.java:379)
+	at de.fhweingarten.zebra.jdbcpool.ConnectionPool.getConnection(ConnectionPool.java:199)
+	at de.fhweingarten.zebra.jdbcpool.PoolManagerImpl.getConnection(PoolManagerImpl.java:125)
+	at de.fhweingarten.zebra.jdbcpool.PoolManagerImpl.getConnection(PoolManagerImpl.java:99)
+	at de.fhweingarten.zebra.jdbcpool.SmartPoolFactory.getConnection(SmartPoolFactory.java:120)
+	at de.fhweingarten.zebra.jdbcconnection.DbConnection.getConnection(DbConnection.java:54)
+	at de.fhweingarten.zebra.calendar.CalendarHandler.getCalendars(CalendarHandler.java:100)
+	at de.fhweingarten.zebra.calendar.CalendarAppl.getCalendarEntries(CalendarAppl.java:236)
+	at de.fhweingarten.zebra.calendar.Notifier.run(Notifier.java:84)
+	at java.lang.Thread.run(Thread.java:695)
+</stack-trace>
+</message>
+<message class='ConnectionLeakPollThread-asta' time-stamp='Mon Jan 12 10:46:13 CET 2015'>
+Polling .............
+</message>

@@ -1,0 +1,139 @@
+
+
+-----------------------------------------REQUEST---START----------------------------------------------------
+http://feglion.de.oracle.com:1080/oracle/service/ServiceUp2Date.php
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:27.0) Gecko/20100101 Firefox/27.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+
+
+
+
+GET http://feglion.de.oracle.com:1080/oracle/service/ServiceUp2Date.php 200 OK
+Date: Wed, 14 May 2014 13:29:21 GMT
+Server: Apache/2.2.25 (Unix) PHP/5.4.22
+X-Powered-By: PHP/5.4.22
+IS_SSL: ssl
+Content-Length: 6
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+------------------------------------------CONTENT---BEGIN---------------------------------------------------
+0.2.4|
+------------------------------------------CONTENT---END---------------------------------------------------
+
+------------------------------------------REQUEST---END---------------------------------------------------
+
+
+-----------------------------------------REQUEST---START----------------------------------------------------
+https://vcap-c2.us.oracle.com/portal/main.aspx?ContentID=9
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:27.0) Gecko/20100101 Firefox/27.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+
+
+
+
+GET https://vcap-c2.us.oracle.com/portal/main.aspx?ContentID=9 200 OK
+Date: Wed, 14 May 2014 13:28:39 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 1.1.4322
+Set-Cookie: ASP.NET_SessionId=rwagf355lzogh13cehcmzrua; path=/
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 3064
+------------------------------------------CONTENT---BEGIN---------------------------------------------------
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>Login</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK rel="stylesheet" type="text/css" href="../ICA.css">
+	</HEAD>
+	<body>
+<center><P> <BR> <P><H1>CEL - VCAP-C2</H1><P><H2>Current Status: Production </H2><H3>Welcome</H3></center>
+		<form name="Form1" method="post" action="Login.aspx?ReturnUrl=%2fportal%2fmain.aspx%3fContentID%3d9&amp;ContentID=9" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjQ0MTI5OTUwOzs+NAe67zDFxtnrwFbhL03XGzJbR+g=" />
+
+			<TABLE id="Table1" cellSpacing="1" cellPadding="1" width="500" align="center" border="0">
+				<tr><td colspan=2>&nbsp;</td></tr>
+				<tr><td colspan=2 align="center" class="ImageSearchResultsHeader">Please Login</td></tr>
+				<tr><td colspan=2>&nbsp;</td></tr>
+				<TR>
+					<TD nowrap align="right">Oracle SSO User ID: </TD>
+					<TD nowrap align="left">&nbsp;<input name="txtUN" type="text" id="txtUN" />
+						&nbsp;
+						</TD>
+				</TR>
+				<TR>
+					<TD nowrap  align="right">Oracle SSO Password: </TD>
+					<TD nowrap align="left">&nbsp;<input name="txtPass" type="password" id="txtPass" />
+						&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD colspan="2" nowrap>
+						<span id="Label1"><font color="Red"></font></span></TD>
+				</TR>
+				<TR>
+					<TD colspan="2" align="center"  nowrap>
+						<input type="submit" name="btnAuth" value="Login" onclick="if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(); " language="javascript" id="btnAuth" class="SearchButton" /></TD>
+				</TR>
+			</TABLE>
+		</form>
+                <P><BR><BR>
+		<TABLE id="Table2" cellSpacing="1" cellPadding="1" width="500" align="center" border="0">
+<tr><td colspan=2>&nbsp;</td></tr>
+
+
+	
+                <tr>
+                   <TD nowrap align="left">&nbsp;</TD>
+                   <TD nowrap align="left"><H3><U>Notice:</U>
+		   <BR><BR><p>
+
+<o:p></o:p></span></p>
+		   <BR><BR> If you have performance issues with your VCAP machine please log a CEL SR.</H3></TD>
+                </tr>		
+<tr><td colspan=2>&nbsp;</td></tr>
+
+		<tr><td colspan=2>&nbsp;</td></tr>
+                <tr>
+                   <TD nowrap align="left">&nbsp;</TD>
+                   <TD nowrap align="center"><font size="2" face="arial"> Problems signing into VCAP? For help or assistance with VCAP click <a href="http://rmtd-tarantella-2.us.oracle.com:30784/portal/page/portal/PG_CEL/GENERAL-CONTENT/How%20to%20Open%20a%20SR%20with%20CEL" target="_blank">here</a> to log a CEL SR or click <a href="http://rmtd-tarantella-2.us.oracle.com:30784/portal/page/portal/PG_CEL/ST_CONTENT/VCAP-Docs/Current-VCAP-FAQ.html" target="_blank">here</a> for FAQ.
+ </font></TD>
+                </tr>
+                
+                 </TABLE>
+
+	</body>
+</HTML>
+------------------------------------------CONTENT---END---------------------------------------------------
+
+------------------------------------------REQUEST---END---------------------------------------------------
+
+
+-----------------------------------------REQUEST---START----------------------------------------------------
+https://vcap-c2.us.oracle.com/Login.aspx?ReturnUrl=%2fportal%2fmain.aspx%3fContentID%3d9&ContentID=9
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:27.0) Gecko/20100101 Firefox/27.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+
+
+
+
+POST https://vcap-c2.us.oracle.com/Login.aspx?ReturnUrl=%2fportal%2fmain.aspx%3fContentID%3d9&ContentID=9 404 Not Found
+Date: Wed, 14 May 2014 13:28:40 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 1.1.4322
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 1500

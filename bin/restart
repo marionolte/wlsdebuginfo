@@ -1,0 +1,13 @@
+ ~/progs/tomcat6/bin/shutdown.sh ; ~/progs/tomcat6/bin/startup.sh ; 
+
+DAT=`date '+%Y-%m-%d'`
+c=`jobs | grep $DAT | awk 'BEGIN{s=0} {s++} END {print s}'  `
+if [[ "$c" == "0" ]]; then 
+   echo start tail
+   # [1]-  Running                 tail -f ~/progs/tomcat6/logs/localhost.2014-12-10.log &
+   # [2]+  Running                 tail -f ~/progs/tomcat6/logs/localhost_access_log.2014-12-10.txt &
+   tail -f $HOME/progs/tomcat6/logs/localhost.${DAT}.log  &
+   tail -f $HOME/progs/tomcat6/logs/localhost_access_log.${DAT}.txt & 
+ else 
+   echo no tail needed
+fi

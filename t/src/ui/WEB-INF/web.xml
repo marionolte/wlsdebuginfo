@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+                         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <description>SshWebProxy - HTML SSH Client</description>
+
+    <listener>
+        <listener-class>com.ericdaugherty.sshwebproxy.SessionCleanup</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.ericdaugherty.sshwebproxy.SshAdminServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SshConnectionServlet</servlet-name>
+        <servlet-class>com.ericdaugherty.sshwebproxy.SshConnectionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SshShellServlet</servlet-name>
+        <servlet-class>com.ericdaugherty.sshwebproxy.SshShellServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SshFileServlet</servlet-name>
+        <servlet-class>com.ericdaugherty.sshwebproxy.SshFileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SshConnectionServlet</servlet-name>
+        <url-pattern>/connection</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SshShellServlet</servlet-name>
+        <url-pattern>/shell</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SshFileServlet</servlet-name>
+        <url-pattern>/file</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SshFileServlet</servlet-name>
+        <url-pattern>/file/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>

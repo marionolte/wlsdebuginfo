@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+
+<!--
+   | Copyright (c) 2003 Eric Daugherty.  All rights reserved.
+   | 
+   | www.ericdaugherty.com/java/workspace
+   | java@ericdaugherty.com
+-->
+
+<!--
+   | JBoss Build Script
+   | Web Application Project
+   |
+   | This build script should be used to develop
+   | Web Application projects (everything is deployed
+   | in a single .war) for JBoss.
+-->
+
+<project default="compile" basedir="..">
+
+<!--
+   | ************************************************************
+   |
+   | Initialize
+   |
+   | The initialize target should be a dependency for all other
+   | targets.  The sub-initialize targest are all included in 
+   | the general initialize target.
+   | ************************************************************
+-->
+
+    <!--
+       | Loads build and environment properties files.  The environment
+       | properties files will be loaded based on current environment (OS).
+       | 
+       | The order the files is loaded is important.  Files loaded first
+       | will override files loaded later.
+       |
+       | The environment properties files support Windows family or Unix 
+       | family (including Linux) environments.  
+       |
+       | The properties are loaded in this order:
+       |
+       | local.win.environment.properties (or local.unix.environment.properties)
+       | win.environment.properties (or unix.environment.properties)
+       | local.environment.properties
+       | environment.properties
+       | local.build.properties
+       | build.properties
+       |
+       | The *environment.properties files should contain environment specific
+       | information, such as directories of external dependencies, base 
+       | directories for the project or compile target, etc.  Only define
+       | the required files.  If a file does not exist, it will be ignored.
+       | 
+       | The local.* properties files should not be stored in the source control
+       | tool and should be specific to an individual developer.  This allows
+       | developers to override any properties.
+    -->
+    <target name="initialize.properties" >
+        <!-- Determine the current Operation System. -->
+        <condition property="environment.prefix" value="win">
+            <os family="windows"/>
+        </condition>
+        <condition property="environment.prefix" value="unix">
+            <os family="unix"/>
+        </condition>
+
+        <!-- Load the appropriate environment property files. --> 
+        <property file="bin/${environment.prefix}.environment.properties" />
+        <property file="bin/local.${environment.prefix}.environment.properties" />
+
+        <!-- Load the generic environmnet property files. -->
+        <property file="bin/local.environment.properties" />
+        <property file="bin/environment.properties" />
+
+        <!-- Load the build property files. -->
+        <property file="bin/local.build.properties" />
+        <property file="bin/build.properties" />
+    </target>
+
+        
+    <!-- 
+       | Initialize Paths used by this build script.
+       |
+       | All required but non-existent directories will be created.
+    -->
+    <target name="initialize.paths">
+    
+        <!--
+           | The path to external libraries that are needed to compile
+           | the the Java classes, but should not be packaged with the
+           | distribution.
+        -->
+        <path id="classpath.lib.ext.ref">
+            <fileset dir="${lib.ext.dir}" >
+                <include name="**/*.jar" />
+                <include name="**/*.zip" />
+            </fileset>
+        </path>    
+        <mkdir dir="${lib.ext.dir}"/>
+        
+        <!--
+           | The path to libraries that should be included with the WAR
+           | distribution, and used to compile that Java classes.
+        -->
+        <path id="classpath.lib.war.ref">
+            <fileset dir="${lib.dir}" >
+                <include name="**/*.jar" />
+                <include name="**/*.zip" />
+            </fileset >
+        </path>
+        
+        <mkdir dir="${lib.war.dir}"/>
+            
+        <!--
+           | The path to use to compile all Java files.
+        -->    
+        <path id="classpath.compile.java.ref">
+            <path refid="classpath.lib.ext.ref"/>
+            <path refid="classpath.lib.war.ref"/>
+        </path>
+        
+        <!--
+           | Classpath used to start JBoss
+        -->
+        <path id="classpath.jboss.run">
+            <pathelement location="${jboss.home.dir}/bin/run.jar"  />
+            <fileset dir="${java.home}/../lib">
+                <include name="tools.jar" />
+            </fileset>
+            <fileset dir="${jboss.home.dir}/lib">
+                <include name="*.jar" />
+                <include name="*.zip" />
+            </fileset>
+        </path>
+    
+    </target>
+
+    <!--
+       | Perform all general initialization tasks
+    -->
+    <target name="initialize" depends="initialize.properties, initialize.paths" />
+
+<!--
+   | ************************************************************
+   |
+   | Compile
+   |
+   | ************************************************************
+-->
+
+    <!--
+       | Compiles all Java files in this project.
+    -->
+    <target name="compile.java" depends="initialize">
+        <mkdir dir="${build.java.dir}" />
+        <javac 
+            srcdir="${src.java.dir}" 
+            destdir="${build.java.dir}" 
+            debug="true"
+        >
+            <classpath refid="classpath.compile.java.ref"/>
+        </javac>
+    </target>
+    
+    <!--
+       | Compile all source files
+    -->
+    <target name="compile" depends="compile.java" />
+
+<!--
+   | ************************************************************
+   |
+   | Build
+   |
+   | ************************************************************
+-->    
+
+    <!--
+       | Builds a WAR file.
+    -->
+    <target name="build.war" depends="initialize, compile">
+        <mkdir dir="${build.war.dir}" />
+        <war destfile="${build.war.file}"
+             webxml="${src.ui.dir}/WEB-INF/web.xml"
+        >
+            <fileset dir="${src.ui.dir}">
+                <exclude name="WEB-INF/web.xml" />
+                <exclude name="**/lib/**" />
+            </fileset>
+            <classes dir="${build.java.dir}" />                
+            <lib dir="${lib.war.dir}" />
+        </war>
+    </target>
+    
+    <!--
+       | Builds all deployable units.
+    -->
+    <target name="build" depends="build.war" />
+    
+<!--
+   | ************************************************************
+   |
+   | Deploy
+   |
+   | ************************************************************
+-->     
+    <target name="deploy" depends="build">
+        <copy file="${build.war.file}"
+            todir="${jboss.home.dir}\server\${name}\deploy"/>
+    </target>
+
+<!--
+   | ************************************************************
+   |
+   | Release
+   |
+   | ************************************************************
+-->
+
+    <target name="release" depends="clean, build">
+        <zip file="${build.dir}/${name}-${version}.zip">
+            <fileset dir="${build.war.dir}">
+                <include name="*.war" />
+            </fileset>
+            <fileset dir="docs">
+                <include name="*" />
+            </fileset>
+        </zip>
+
+        <zip file="${build.dir}/${name}-${version}-src.zip"
+            basedir="." >
+            <include name="bin/**/*" />
+            <include name="docs/**/*" />
+            <include name="lib/**/*" />
+            <exclude name="lib/ext/javax.servlet.jar" />
+            <include name="src/**/*" />
+            <exclude name="src/jboss/**/*" />
+        </zip>
+    </target>
+
+<!--
+   | ************************************************************
+   |
+   | JBoss
+   |
+   | ************************************************************
+-->      
+    
+    <!--
+       | Copies the configuration information into the
+       | JBossHome/server/${name} directory to make sure the
+       | JBoss server configuration is up to date.
+     -->
+    <target name="jboss.config" depends="initialize">
+        <mkdir dir="${jboss.home.dir}/server/${name}" />
+        <copy todir="${jboss.home.dir}/server/${name}" >
+            <fileset dir="${src.jboss.dir}" />
+        </copy>
+    </target>
+
+    <!--
+       | Starts the JBoss Server
+    -->
+    <target name="jboss.start" depends="initialize, jboss.config">
+        <java classname="org.jboss.Main"
+              classpathref="classpath.jboss.run"
+              fork="yes"
+              newenvironment="true"
+        >
+            <arg value="-c${name}" />
+            <jvmarg value="-server" />
+            <jvmarg value="-Xdebug" />
+            <jvmarg value="-Xnoagent" />
+            <jvmarg value="-Djava.compiler=NONE" />
+            <jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8787" />
+        </java>
+    </target>
+    
+<!--
+   | ************************************************************
+   |
+   | Document
+   |
+   | ************************************************************
+-->      
+    
+    <!--
+       | Generates the Javadoc API documentation for the Java
+       | source files.
+    -->    
+    <target name="javadoc" depends="initialize">
+        <delete dir="${build.javadoc.dir}" />
+        <mkdir dir="${build.javadoc.dir}"/>
+        <javadoc sourcepath="${src.java.dir}"
+                 classpathref="classpath.compile.java.ref"
+                 packagenames="${javadoc.packages}"
+                 destdir="${build.javadoc.dir}"
+                 access="${javadoc.access}"
+                 author="true"
+                 version="true"
+                 use="true"
+                 windowtitle="${name} API"
+                 doctitle="${name}"
+                 header="${javadoc.header}"
+                 footer="${javadoc.footer}"
+        >
+        </javadoc>
+    </target>
+
+<!--
+   | ************************************************************
+   |
+   | Clean
+   |
+   | ************************************************************
+-->      
+
+    <!-- 
+      | Remove all generated .class files 
+    -->
+    <target name="clean.java" depends="initialize">
+       <delete dir="${build.java.dir}"/>       
+    </target>
+
+    <!-- 
+       | Remove the generated war file
+    -->
+    <target name="clean.war" depends="initialize">
+        <delete dir="${build.war.file}"/>
+    </target>
+    
+    <!--
+       | Remove the genrated Javadoc documentation.
+    -->
+    <target name="clean.javadoc">
+        <delete dir="${build.javadoc.dir}" />
+    </target>
+    
+    <!--
+       | Deletes the entire build directory
+    -->
+    <target name="clean" 
+            depends="clean.java,
+                     clean.war,
+                     clean.javadoc">
+        <delete dir="${build.dir}" />
+    </target>
+
+</project>
